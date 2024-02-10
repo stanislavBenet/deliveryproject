@@ -1,13 +1,134 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Philosopher", sans-serif;
+  font-size: 16px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+.subtitle {
+  @apply text-orange-500 text-xl tracking-widest;
+}
+
+.bgimgabout {
+  position: absolute;
+  top:-150px;
+  left:-120px;
+}
+
+
+.pad li {
+  padding-bottom: 10px;
+}
+
+.pad a {
+  padding-left: 6px;
+}
+
+.cardBorder {
+  border-radius: 5rem 0 5rem 0;
+}
+
+.transparentBtn {
+  @apply bg-white border text-orange-500 rounded h-12 w-40;
+}
+
+.orangeBtn { 
+  @apply bg-orange-500 text-white rounded;
+}
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin-top: 20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-1 {
+  --size: calc((100% / 12) * 1);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-2 {
+  --size: calc((100% / 12) * 2);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-3 {
+  --size: calc((100% / 12) * 3);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-4 {
+  --size: calc((100% / 12) * 4);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-5 {
+  --size: calc((100% / 12) * 5);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-6 {
+  --size: calc((100% / 12) * 6);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-7 {
+  --size: calc((100% / 12) * 7);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-8 {
+  --size: calc((100% / 12) * 8);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-9 {
+  --size: calc((100% / 12) * 9);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-10 {
+  --size: calc((100% / 12) * 10);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-11 {
+  --size: calc((100% / 12) * 11);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-12 {
+  --size: calc((100% / 12) * 12);
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+

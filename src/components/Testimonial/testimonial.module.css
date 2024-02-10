@@ -1,0 +1,25 @@
+.bgPhoto::before {
+  content: url("/public/bgPhoto.png");
+  position: absolute;
+  bottom: 85px;
+  left: 485px;
+}
+
+.next,
+.prev {
+    user-select: none;
+  position: absolute;
+  bottom: 80px;
+  width: 16px;
+  cursor: pointer;
+  z-index: 1;
+}
+.next {
+  content: url("/public/next.png");
+  right: 200px;
+}
+
+.prev {
+  content: url("/public/prev.png");
+  left: 200px;
+}

@@ -1,0 +1,32 @@
+.apple {
+    position: relative;
+   @apply w-40 h-12 bg-black text-white rounded pl-4;
+}
+
+.apple::before {
+    position: absolute;
+    left:12px;
+    top:8px;
+    content:url("./../../../public/apple.png")
+}
+
+
+.playMarket {
+    position: relative;
+   @apply w-40 h-12 text-black ml-12 border-2 rounded pl-4;
+}
+
+.playMarket::before {
+    position: absolute;
+    left:10px;
+    top:8px;
+    content:url("./../../../public/playMarket.png")
+}
+
+.bgImgTakeAway {
+    position: absolute;
+  top:180px;
+  right:120px;
+  z-index: 1;
+@apply border-2 shadow-md;
+}
